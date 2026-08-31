@@ -11,7 +11,7 @@ templ Page(){
     <body class="w-full max-w-full overflow-x-hidden p-2">
       <div class="flex flex-wrap
             p-2 resize 
-            overflow-auto rounded bg-black
+            overflow-auto rounded border-solid border-2
             max-w-full min-w-0
       ">
         @T()
@@ -31,59 +31,59 @@ templ Page(){
   </html>
 }
 // templ Letter(){
-//   <div class="flex-1 min-w-17 min-h-17 rounded bg-red-200"></div>
+//   <div class="flex-1 min-w-17 min-h-17 rounded "></div>
 // }
 
 // letters
 templ T(){
-  <div class="border-solid border-2 flex-1 min-w-17 min-h-17 rounded bg-red-200 relative">
-    <div class="absolute top-4 right-0 bottom-0 w-4 rounded-tl bg-black"></div>
-    <div class="absolute top-4 left-0 bottom-0 w-4 rounded-tr bg-black"></div>
+  <div class="border-solid border-2 flex-1 min-w-17 min-h-17 rounded  relative">
+    <div class="absolute top-4 right-0 bottom-0 w-4 rounded-tl border-solid border-2"></div>
+    <div class="absolute top-4 left-0 bottom-0 w-4 rounded-tr border-solid border-2"></div>
   </div>
 }
 templ E(){
-  <div class="border-solid border-2 flex-1 min-w-17 min-h-17 rounded bg-red-200 relative">
-    <div class="absolute top-4  right-0 w-4 h-4  bg-black rounded-l"></div>
-    <div class="absolute bottom-4 right-0 w-4 h-4  bg-black rounded-l"></div>
+  <div class="border-solid border-2 flex-1 min-w-17 min-h-17 rounded  relative">
+    <div class="absolute top-4  right-0 w-4 h-4  border-solid border-2 rounded-l"></div>
+    <div class="absolute bottom-4 right-0 w-4 h-4  border-solid border-2 rounded-l"></div>
   </div>
 }
 templ D(){
-  <div class="border-solid border-2 flex-1 min-w-17 min-h-17 rounded-r-xl bg-red-200 relative">
-    <div class="absolute rounded-r left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 h-4 w-4 bg-black"></div>
+  <div class="border-solid border-2 flex-1 min-w-17 min-h-17 rounded-r-xl  relative">
+    <div class="absolute rounded-r left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 h-4 w-4 border-solid border-2"></div>
   </div>
 }
 templ I(){
-  <div class="border-solid border-2 flex-1 min-w-17 min-h-17 rounded bg-red-200 relative">
-    <div class="absolute top-4 bottom-4 right-0  w-4 rounded-l bg-black"></div>
-    <div class="absolute top-4 bottom-4 left-0  w-4 rounded-r bg-black"></div>
+  <div class="border-solid border-2 flex-1 min-w-17 min-h-17 rounded  relative">
+    <div class="absolute top-4 bottom-4 right-0  w-4 rounded-l border-solid border-2"></div>
+    <div class="absolute top-4 bottom-4 left-0  w-4 rounded-r border-solid border-2"></div>
   </div>
 }
 templ F(){
-  <div class="border-solid border-2 flex-1 min-w-17 min-h-17 rounded bg-red-200 relative">
-    <div class="absolute top-4  right-0 w-4 h-4  bg-black rounded-l"></div>
-    <div class="absolute top-12 bottom-0 right-0 w-4  bg-black rounded-tl"></div>
+  <div class="border-solid border-2 flex-1 min-w-17 min-h-17 rounded  relative">
+    <div class="absolute top-4  right-0 w-4 h-4  border-solid border-2 rounded-l"></div>
+    <div class="absolute top-12 bottom-0 right-0 w-4  border-solid border-2 rounded-tl"></div>
   </div>
 }
 templ R(){
-  <div class="border-solid border-2 flex-1 min-w-17 min-h-17 rounded-tr-xl bg-red-200 relative">
-    <div class="absolute rounded-r top-4 left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 h-4 w-4 bg-black"></div>
-    <div class="absolute rounded-tr top-12 bottom-0 left-1/2 -translate-x-1/2 w-4  bg-black"></div>
+  <div class="border-solid border-2 flex-1 min-w-17 min-h-17 rounded-tr-xl  relative">
+    <div class="absolute rounded-r top-4 left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 h-4 w-4 border-solid border-2"></div>
+    <div class="absolute rounded-tr top-12 bottom-0 left-1/2 -translate-x-1/2 w-4  border-solid border-2"></div>
   </div>
 }
 templ O(){
-  <div class="border-solid border-2 flex-1 min-w-17 min-h-17 rounded-xl bg-red-200 relative">
-    <div class="absolute rounded left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 h-4 w-4 bg-black"></div>
+  <div class="border-solid border-2 flex-1 min-w-17 min-h-17 rounded-xl  relative">
+    <div class="absolute rounded left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 h-4 w-4 border-solid border-2"></div>
   </div>
 }
 templ U(){
-  <div class="border-solid border-2 flex-1 min-w-17 min-h-17 rounded-b-xl bg-red-200 relative">
-    <div class="absolute rounded-b left-1/2 -translate-x-1/2 top-0 h-4 w-4 bg-black"></div>
+  <div class="border-solid border-2 flex-1 min-w-17 min-h-17 rounded-b-xl  relative">
+    <div class="absolute rounded-b left-1/2 -translate-x-1/2 top-0 h-4 w-4 border-solid border-2"></div>
   </div>
 }
 templ S(){
-  <div class="border-solid border-2 flex-1 min-w-17 min-h-17 rounded-tl-xl rounded-br-xl bg-red-200 relative">
-    <div class="absolute top-4  right-0 w-4 h-4  bg-black rounded-l"></div>
-    <div class="absolute bottom-4 left-0 w-4 h-4  bg-black rounded-r"></div>
+  <div class="border-solid border-2 flex-1 min-w-17 min-h-17 rounded-tl-xl rounded-br-xl  relative">
+    <div class="absolute top-4  right-0 w-4 h-4  border-solid border-2 rounded-l"></div>
+    <div class="absolute bottom-4 left-0 w-4 h-4  border-solid border-2 rounded-r"></div>
   </div>
 }
 
