@@ -1,14 +1,64 @@
 package html
 
+import "fmt"
+
 templ Page(){
   <!doctype html>
   <html>
     <head>
       <title>Title</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     </head>
-    <body>
-      Hello, World!
+    <body class="w-full max-w-full overflow-x-hidden p-2">
+      <div class="flex flex-wrap
+            gap-2 p-2 resize 
+            overflow-auto rounded bg-blue-500 
+            max-w-full min-w-0
+      ">
+        @T(2)
+        @E(2)
+        @D(2)
+        @I(2)
+        @F(2)
+        @E(2)
+        @R(2)
+        @O(2)
+        @U(2)
+        @S(2)
+      </div>
+
+      
     </body>
   </html>
 }
+
+// letters
+templ T(stroke int){
+  <div class={ fmt.Sprintf("box-border w-20 h-20 border-black border-[%dpx]", stroke) }></div>
+}
+templ E(stroke int){
+  <div class={ fmt.Sprintf("box-border w-20 h-20 border-black border-[%dpx]", stroke) }></div>
+}
+templ D(stroke int){
+  <div class={ fmt.Sprintf("box-border w-20 h-20 border-black border-[%dpx]", stroke) }></div>
+}
+templ I(stroke int){
+  <div class={ fmt.Sprintf("box-border w-20 h-20 border-black border-[%dpx]", stroke) }></div>
+}
+templ F(stroke int){
+  <div class={ fmt.Sprintf("box-border w-20 h-20 border-black border-[%dpx]", stroke) }></div>
+}
+templ R(stroke int){
+  <div class={ fmt.Sprintf("box-border w-20 h-20 border-black border-[%dpx]", stroke) }></div>
+}
+templ O(stroke int){
+  <div class={ fmt.Sprintf("box-border w-20 h-20 border-black border-[%dpx]", stroke) }></div>
+}
+templ U(stroke int){
+  <div class={ fmt.Sprintf("box-border w-20 h-20 border-black border-[%dpx]", stroke) }></div>
+}
+templ S(stroke int){
+  <div class={ fmt.Sprintf("box-border w-20 h-20 border-black border-[%dpx]", stroke) }></div>
+}
+
