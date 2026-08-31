@@ -136,7 +136,7 @@ func E() templ.Component {
 			templ_7745c5c3_Var3 = templ.NopComponent
 		}
 		ctx = templ.ClearChildren(ctx)
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 4, "<div class=\"flex-1 min-w-17 min-h-17 rounded bg-red-200\"></div>")
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 4, "<div class=\"border-solid border-2 flex-1 min-w-17 min-h-17 rounded bg-red-200 relative\"><div class=\"absolute top-4 right-0 w-4 h-4 bg-black rounded-tl rounded-bl\"></div><div class=\"absolute bottom-4 right-0 w-4 h-4 bg-black rounded-tl rounded-bl\"></div></div>")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
@@ -194,7 +194,7 @@ func I() templ.Component {
 			templ_7745c5c3_Var5 = templ.NopComponent
 		}
 		ctx = templ.ClearChildren(ctx)
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 6, "<div class=\"border-solid border-2 flex-1 min-w-17 min-h-17 rounded bg-red-200 relative\"><div class=\"absolute top-4 bottom-4 right-0 top-0 w-4 rounded-bl rounded-tl bg-black\"></div><div class=\"absolute top-4 bottom-4 left-0 top-0 w-4 rounded-br rounded-tr bg-black\"></div></div>")
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 6, "<div class=\"border-solid border-2 flex-1 min-w-17 min-h-17 rounded bg-red-200 relative\"><div class=\"absolute top-4 bottom-4 right-0 w-4 rounded-bl rounded-tl bg-black\"></div><div class=\"absolute top-4 bottom-4 left-0 w-4 rounded-br rounded-tr bg-black\"></div></div>")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
