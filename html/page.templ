@@ -1,7 +1,5 @@
 package html
 
-import "fmt"
-
 templ Page(){
   <!doctype html>
   <html>
@@ -12,53 +10,58 @@ templ Page(){
     </head>
     <body class="w-full max-w-full overflow-x-hidden p-2">
       <div class="flex flex-wrap
-            gap-2 p-2 resize 
+            p-2 gap-2 resize 
             overflow-auto rounded bg-blue-500 
             max-w-full min-w-0
       ">
-        @T(2)
-        @E(2)
-        @D(2)
-        @I(2)
-        @F(2)
-        @E(2)
-        @R(2)
-        @O(2)
-        @U(2)
-        @S(2)
+        @T()
+        @E()
+        @D()
+        @I()
+        @F()
+        @E()
+        @R()
+        @O()
+        @U()
+        @S()
       </div>
 
       
     </body>
   </html>
 }
+// templ Letter(){
+//   <div class="flex-1 min-w-17 min-h-17 rounded bg-red-200"></div>
+// }
 
 // letters
-templ T(stroke int){
-  <div class={ fmt.Sprintf("box-border w-20 h-20 border-black border-[%dpx]", stroke) }></div>
+templ T(){
+  <div class="border-solid border-2 flex-1 min-w-17 min-h-17 rounded bg-red-200 relative">
+    <div class="absolute top-2 right-0 bottom-0 w-2 bg-black"></div>
+  </div>
 }
-templ E(stroke int){
-  <div class={ fmt.Sprintf("box-border w-20 h-20 border-black border-[%dpx]", stroke) }></div>
+templ E(){
+  <div class="flex-1 min-w-17 min-h-17 rounded bg-red-200"></div>
 }
-templ D(stroke int){
-  <div class={ fmt.Sprintf("box-border w-20 h-20 border-black border-[%dpx]", stroke) }></div>
+templ D(){
+  <div class="flex-1 min-w-17 min-h-17 rounded bg-red-200"></div>
 }
-templ I(stroke int){
-  <div class={ fmt.Sprintf("box-border w-20 h-20 border-black border-[%dpx]", stroke) }></div>
+templ I(){
+  <div class="flex-1 min-w-17 min-h-17 rounded bg-red-200"></div>
 }
-templ F(stroke int){
-  <div class={ fmt.Sprintf("box-border w-20 h-20 border-black border-[%dpx]", stroke) }></div>
+templ F(){
+  <div class="flex-1 min-w-17 min-h-17 rounded bg-red-200"></div>
 }
-templ R(stroke int){
-  <div class={ fmt.Sprintf("box-border w-20 h-20 border-black border-[%dpx]", stroke) }></div>
+templ R(){
+  <div class="flex-1 min-w-17 min-h-17 rounded bg-red-200"></div>
 }
-templ O(stroke int){
-  <div class={ fmt.Sprintf("box-border w-20 h-20 border-black border-[%dpx]", stroke) }></div>
+templ O(){
+  <div class="flex-1 min-w-17 min-h-17 rounded bg-red-200"></div>
 }
-templ U(stroke int){
-  <div class={ fmt.Sprintf("box-border w-20 h-20 border-black border-[%dpx]", stroke) }></div>
+templ U(){
+  <div class="flex-1 min-w-17 min-h-17 rounded bg-red-200"></div>
 }
-templ S(stroke int){
-  <div class={ fmt.Sprintf("box-border w-20 h-20 border-black border-[%dpx]", stroke) }></div>
+templ S(){
+  <div class="flex-1 min-w-17 min-h-17 rounded bg-red-200"></div>
 }
 
