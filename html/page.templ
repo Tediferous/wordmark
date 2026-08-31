@@ -49,7 +49,7 @@ templ E(){
 }
 templ D(){
   <div class="border-solid border-2 flex-1 min-w-17 min-h-17 rounded-r-xl bg-red-200 relative">
-    <div class="absolute rounded-r left-4 top-1/2 -translate-y-1/2 h-4 w-4 bg-black"></div>
+    <div class="absolute rounded-r left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 h-4 w-4 bg-black"></div>
   </div>
 }
 templ I(){
@@ -59,18 +59,31 @@ templ I(){
   </div>
 }
 templ F(){
-  <div class="flex-1 min-w-17 min-h-17 rounded bg-red-200"></div>
+  <div class="border-solid border-2 flex-1 min-w-17 min-h-17 rounded bg-red-200 relative">
+    <div class="absolute top-4  right-0 w-4 h-4  bg-black rounded-l"></div>
+    <div class="absolute top-12 bottom-0 right-0 w-4  bg-black rounded-tl"></div>
+  </div>
 }
 templ R(){
-  <div class="flex-1 min-w-17 min-h-17 rounded bg-red-200"></div>
+  <div class="border-solid border-2 flex-1 min-w-17 min-h-17 rounded-tr-xl bg-red-200 relative">
+    <div class="absolute rounded-r top-4 left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 h-4 w-4 bg-black"></div>
+    <div class="absolute rounded-tr top-12 bottom-0 left-1/2 -translate-x-1/2 w-4  bg-black"></div>
+  </div>
 }
 templ O(){
-  <div class="flex-1 min-w-17 min-h-17 rounded bg-red-200"></div>
+  <div class="border-solid border-2 flex-1 min-w-17 min-h-17 rounded-xl bg-red-200 relative">
+    <div class="absolute rounded left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 h-4 w-4 bg-black"></div>
+  </div>
 }
 templ U(){
-  <div class="flex-1 min-w-17 min-h-17 rounded bg-red-200"></div>
+  <div class="border-solid border-2 flex-1 min-w-17 min-h-17 rounded-b-xl bg-red-200 relative">
+    <div class="absolute rounded-b left-1/2 -translate-x-1/2 top-0 h-4 w-4 bg-black"></div>
+  </div>
 }
 templ S(){
-  <div class="flex-1 min-w-17 min-h-17 rounded bg-red-200"></div>
+  <div class="border-solid border-2 flex-1 min-w-17 min-h-17 rounded-tl-xl rounded-br-xl bg-red-200 relative">
+    <div class="absolute top-4  right-0 w-4 h-4  bg-black rounded-l"></div>
+    <div class="absolute bottom-4 left-0 w-4 h-4  bg-black rounded-r"></div>
+  </div>
 }
 
