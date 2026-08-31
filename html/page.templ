@@ -10,7 +10,7 @@ templ Page(){
     </head>
     <body class="w-full max-w-full overflow-x-hidden p-2">
       <div class="flex flex-wrap
-            p-2 gap-2 resize 
+            p-2 resize 
             overflow-auto rounded bg-blue-500 
             max-w-full min-w-0
       ">
@@ -43,17 +43,19 @@ templ T(){
 }
 templ E(){
   <div class="border-solid border-2 flex-1 min-w-17 min-h-17 rounded bg-red-200 relative">
-    <div class="absolute top-4  right-0 w-4 h-4  bg-black rounded-tl rounded-bl"></div>
-    <div class="absolute bottom-4 right-0 w-4 h-4  bg-black rounded-tl rounded-bl"></div>
+    <div class="absolute top-4  right-0 w-4 h-4  bg-black rounded-l"></div>
+    <div class="absolute bottom-4 right-0 w-4 h-4  bg-black rounded-l"></div>
   </div>
 }
 templ D(){
-  <div class="flex-1 min-w-17 min-h-17 rounded bg-red-200"></div>
+  <div class="border-solid border-2 flex-1 min-w-17 min-h-17 rounded-r-xl bg-red-200 relative">
+    <div class="absolute rounded-r left-4 top-1/2 -translate-y-1/2 h-4 w-4 bg-black"></div>
+  </div>
 }
 templ I(){
   <div class="border-solid border-2 flex-1 min-w-17 min-h-17 rounded bg-red-200 relative">
-    <div class="absolute top-4 bottom-4 right-0  w-4 rounded-bl rounded-tl bg-black"></div>
-    <div class="absolute top-4 bottom-4 left-0  w-4 rounded-br rounded-tr bg-black"></div>
+    <div class="absolute top-4 bottom-4 right-0  w-4 rounded-l bg-black"></div>
+    <div class="absolute top-4 bottom-4 left-0  w-4 rounded-r bg-black"></div>
   </div>
 }
 templ F(){
