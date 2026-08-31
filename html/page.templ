@@ -37,7 +37,8 @@ templ Page(){
 // letters
 templ T(){
   <div class="border-solid border-2 flex-1 min-w-17 min-h-17 rounded bg-red-200 relative">
-    <div class="absolute top-2 right-0 bottom-0 w-2 bg-black"></div>
+    <div class="absolute top-4 right-0 bottom-0 w-4 rounded-tl bg-black"></div>
+    <div class="absolute top-4 left-0 bottom-0 w-4 rounded-tr bg-black"></div>
   </div>
 }
 templ E(){
@@ -47,7 +48,10 @@ templ D(){
   <div class="flex-1 min-w-17 min-h-17 rounded bg-red-200"></div>
 }
 templ I(){
-  <div class="flex-1 min-w-17 min-h-17 rounded bg-red-200"></div>
+  <div class="border-solid border-2 flex-1 min-w-17 min-h-17 rounded bg-red-200 relative">
+    <div class="absolute top-4 bottom-4 right-0 top-0 w-4 rounded-bl rounded-tl bg-black"></div>
+    <div class="absolute top-4 bottom-4 left-0 top-0 w-4 rounded-br rounded-tr bg-black"></div>
+  </div>
 }
 templ F(){
   <div class="flex-1 min-w-17 min-h-17 rounded bg-red-200"></div>
