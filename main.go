@@ -1,10 +1,10 @@
 package main
 
 import (
-	"html-quickstart/html"
-
 	"github.com/labstack/echo/v5"
 	"github.com/labstack/echo/v5/middleware"
+
+	"github.com/tediferous/wordmark/html"
 )
 
 func main() {

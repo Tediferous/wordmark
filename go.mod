@@ -1,4 +1,4 @@
-module html-quickstart
+module github.com/tediferous/wordmark
 
 go 1.26.2
 
